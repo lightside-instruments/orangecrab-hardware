@@ -280,7 +280,7 @@
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "gkl_power_GND" (at 0 -2.54 0)
+      (property "Value" "GND" (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at -2.54 -8.89 0)
@@ -810,9 +810,6 @@
       (project "OrangeCrab"
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005ac0a2a0"
           (reference "C29") (unit 1)
-        )
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d1738db"
-          (reference "C?") (unit 1)
         )
       )
     )

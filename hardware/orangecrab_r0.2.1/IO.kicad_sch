@@ -733,15 +733,15 @@
           (stroke (width 0.254) (type solid))
           (fill (type background))
         )
-        (arc (start -8.89 -3.81) (mid -6.985 -5.715) (end -5.08 -3.81)
+        (arc (start -8.89 -3.81) (mid -6.985 -5.7066) (end -5.08 -3.81)
           (stroke (width 0.508) (type solid))
           (fill (type none))
         )
-        (arc (start -7.62 -3.81) (mid -6.985 -4.445) (end -6.35 -3.81)
+        (arc (start -7.62 -3.81) (mid -6.985 -4.4422) (end -6.35 -3.81)
           (stroke (width 0.254) (type solid))
           (fill (type none))
         )
-        (arc (start -7.62 -3.81) (mid -6.985 -4.445) (end -6.35 -3.81)
+        (arc (start -7.62 -3.81) (mid -6.985 -4.4422) (end -6.35 -3.81)
           (stroke (width 0.254) (type solid))
           (fill (type outline))
         )
@@ -749,15 +749,15 @@
           (stroke (width 0.254) (type solid))
           (fill (type outline))
         )
-        (arc (start -6.35 3.81) (mid -6.985 4.445) (end -7.62 3.81)
+        (arc (start -6.35 3.81) (mid -6.985 4.4422) (end -7.62 3.81)
           (stroke (width 0.254) (type solid))
           (fill (type none))
         )
-        (arc (start -6.35 3.81) (mid -6.985 4.445) (end -7.62 3.81)
+        (arc (start -6.35 3.81) (mid -6.985 4.4422) (end -7.62 3.81)
           (stroke (width 0.254) (type solid))
           (fill (type outline))
         )
-        (arc (start -5.08 3.81) (mid -6.985 5.715) (end -8.89 3.81)
+        (arc (start -5.08 3.81) (mid -6.985 5.7066) (end -8.89 3.81)
           (stroke (width 0.508) (type solid))
           (fill (type none))
         )
@@ -1327,7 +1327,7 @@
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "gkl_power_GND" (at 0 -2.54 0)
+      (property "Value" "GND" (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at -2.54 -8.89 0)
@@ -2071,47 +2071,47 @@
     (uuid d82a487d-f87e-45d7-a3d3-283aac8747d5)
   )
 
-  (label "AREF" (at 218.44 101.6 180)
+  (label "AREF" (at 218.44 101.6 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 07789968-5918-419b-83b7-5990274c3918)
   )
-  (label "A3" (at 218.44 114.3 180)
+  (label "A3" (at 218.44 114.3 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 167cb67c-43c3-47cb-aad1-cfa00855b95c)
   )
-  (label "A0" (at 218.44 106.68 180)
+  (label "A0" (at 218.44 106.68 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 1a618bbd-75ae-444b-846d-0cf6513e6394)
   )
-  (label "A4" (at 218.44 116.84 180)
+  (label "A4" (at 218.44 116.84 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 28007202-e05c-4187-a6b3-2433c2431090)
   )
-  (label "_USB_D_P" (at 63.5 64.77 0)
+  (label "_USB_D_P" (at 63.5 64.77 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3b341a54-62e3-4f3c-a6b4-2182ab259d0f)
   )
-  (label "_USB_D_P" (at 33.02 140.97 0)
+  (label "_USB_D_P" (at 33.02 140.97 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5902d8f3-6621-4aee-a67b-34b48361a118)
   )
-  (label "_USB_D_N" (at 63.5 67.31 0)
+  (label "_USB_D_N" (at 63.5 67.31 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 67b17dea-ae81-4f7b-8a7d-08b881ee7fa5)
   )
-  (label "A5" (at 218.44 119.38 180)
+  (label "A5" (at 218.44 119.38 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 7cc23262-11d2-4d76-b0b4-1da9bde2bb96)
   )
-  (label "_USB_D_N" (at 33.02 143.51 0)
+  (label "_USB_D_N" (at 33.02 143.51 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a50402e6-c90b-42b8-8415-c0eaceebc3f9)
   )
-  (label "A2" (at 218.44 111.76 180)
+  (label "A2" (at 218.44 111.76 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid dc188717-4791-4c3d-961a-fba405f32e73)
   )
-  (label "A1" (at 218.44 109.22 180)
+  (label "A1" (at 218.44 109.22 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid e9b42781-8d1c-4c10-a945-a8a076c786c7)
   )
@@ -2505,7 +2505,7 @@
   (symbol (lib_id "Connector:Conn_01x16_Male") (at 229.87 114.3 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d0a61da)
-    (property "Reference" "J?" (at 232.41 140.97 0)
+    (property "Reference" "J2" (at 232.41 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x16_Male" (at 233.68 138.43 0)
@@ -2538,9 +2538,6 @@
     (pin "9" (uuid 2bae48e4-caeb-49f3-9483-e29f633c8787))
     (instances
       (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d1738db"
-          (reference "J?") (unit 1)
-        )
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
           (reference "J2") (unit 1)
         )
@@ -2551,7 +2548,7 @@
   (symbol (lib_id "Connector:Conn_01x12_Male") (at 223.52 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d1698ae)
-    (property "Reference" "J?" (at 220.98 53.34 0)
+    (property "Reference" "J1" (at 220.98 53.34 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x12_Male" (at 219.71 55.88 0)
@@ -2580,9 +2577,6 @@
     (pin "9" (uuid be97c533-2ddf-4f82-9ffc-68cecb819407))
     (instances
       (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d1738db"
-          (reference "J?") (unit 1)
-        )
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
           (reference "J1") (unit 1)
         )
@@ -2606,6 +2600,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 93b2ba39-8fb2-4d15-9b4a-2c16bcd5f09d))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0133") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Connector:TestPoint_Flag") (at 44.45 140.97 0) (unit 1)
@@ -2797,9 +2798,6 @@
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
           (reference "#PWR0121") (unit 1)
         )
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d1738db"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -2858,6 +2856,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f734edb2-0381-4470-994f-2d9efa318053))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0134") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:LED_ARGB") (at 226.06 34.29 0) (unit 1)
@@ -3106,6 +3111,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3a8712f1-179e-4811-b952-b57f96ab6320))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0164") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 104.14 172.72 0) (unit 1)
@@ -3162,6 +3174,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4380422e-68ae-4b40-a220-c99e90d2ffe5))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0165") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:R") (at 77.47 64.77 90) (unit 1)
@@ -3249,7 +3268,7 @@
     (property "Value" "74HC4067BQ" (at 160.02 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DFN_QFN:Texas_RGY_R-PVQFN-N24_EP2.05x3.1mm" (at 173.99 147.32 0)
+    (property "Footprint" "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" (at 173.99 147.32 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" (at 142.24 100.33 0)
@@ -3310,6 +3329,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b25852ea-ddbf-4ede-86cc-b8ee48d98805))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0103") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "gkl_power:GND") (at 151.13 151.13 0) (unit 1)
@@ -3328,6 +3354,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b1a96495-3cbb-484b-85f6-6efc48b1434d))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0131") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 97.79 123.19 0) (unit 1)
@@ -3384,6 +3417,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid acdb70b3-5d3f-4d0a-a439-c8a2fab5dba6))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0132") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "gkl_power:GND") (at 97.79 130.81 0) (unit 1)
@@ -3402,6 +3442,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ea624a14-cc71-4db3-b24c-a946876ebf8b))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0160") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 173.99 151.13 0) (unit 1)
@@ -3458,6 +3505,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 98cb3f37-cc73-49bc-a903-9cc87b4bef90))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0161") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:R") (at 156.21 73.66 0) (unit 1)
@@ -3608,6 +3662,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 87fef006-cf9f-41d9-9514-9f7ca006fd7d))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
+          (reference "#PWR0172") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:R") (at 203.2 128.27 0) (unit 1)
@@ -4101,9 +4162,6 @@
       (project "OrangeCrab"
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
           (reference "#PWR0109") (unit 1)
-        )
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d1738db"
-          (reference "#PWR?") (unit 1)
         )
       )
     )

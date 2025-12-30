@@ -159,7 +159,7 @@
       (property "Reference" "U" (at 0 36.83 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "gkl_mem_MT41K64M16TW-107_J-TR" (at 0 34.29 0)
+      (property "Value" "MT41K64M16TW-107_J-TR" (at 0 34.29 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 1.27 38.1 0)
@@ -549,7 +549,7 @@
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "gkl_power_GND" (at 0 -2.54 0)
+      (property "Value" "GND" (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at -2.54 -8.89 0)
@@ -1003,23 +1003,23 @@
     (uuid fcf69fc4-8fc7-4574-8b5e-8df2f75be309)
   )
 
-  (label "RAM_VDDQ" (at 134.62 48.26 0)
+  (label "RAM_VDDQ" (at 134.62 48.26 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2f94ece4-868d-466f-be46-cf7107171e66)
   )
-  (label "RAM_VDD" (at 185.42 72.39 0)
+  (label "RAM_VDD" (at 185.42 72.39 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 312267eb-7aff-4e00-9000-b0bbb65454c1)
   )
-  (label "RAM_VDDQ" (at 185.42 74.93 0)
+  (label "RAM_VDDQ" (at 185.42 74.93 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 47dfb319-5165-4460-b309-68a913cd9c4e)
   )
-  (label "RAM_VDD" (at 134.62 29.21 0)
+  (label "RAM_VDD" (at 134.62 29.21 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 77c5de2a-917f-4d09-b863-5493c4d7ad6c)
   )
-  (label "RAM_ZQ" (at 185.42 87.63 0)
+  (label "RAM_ZQ" (at 185.42 87.63 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f580a056-c5be-4a45-8d4f-cbe84c9a18f8)
   )
@@ -1606,6 +1606,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e2621f04-17b6-4217-9060-9c149a9e000c))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0135") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 176.53 54.61 0) (unit 1)
@@ -1776,6 +1783,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 31c42536-6f39-4bb4-9cc6-fe9f1b6cd8d2))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0136") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 176.53 35.56 0) (unit 1)
@@ -1946,6 +1960,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5f701248-db22-4970-8bd5-7ff9aa289aff))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0126") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 214.63 54.61 0) (mirror y) (unit 1)
@@ -2040,6 +2061,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 285a195a-9740-4e26-843c-c93ce78432bd))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0127") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:L_Small") (at 224.79 48.26 90) (unit 1)
@@ -2172,6 +2200,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0d160213-1d20-4a42-b421-f4426a51e7a6))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0128") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:L_Small") (at 224.79 74.93 90) (unit 1)
@@ -2228,6 +2263,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 58c4023b-1559-4ad8-a936-5595b2c166dc))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0129") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 66.04 142.24 0) (unit 1)
@@ -2284,6 +2326,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2cce95b3-8db2-4c40-b403-19c96c27d951))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0139") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:R") (at 74.93 134.62 90) (unit 1)
@@ -2319,9 +2368,6 @@
       (project "OrangeCrab"
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
           (reference "R5") (unit 1)
-        )
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
-          (reference "R?") (unit 1)
         )
       )
     )
@@ -2361,9 +2407,6 @@
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
           (reference "R13") (unit 1)
         )
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
-          (reference "R?") (unit 1)
-        )
       )
     )
   )
@@ -2401,9 +2444,6 @@
       (project "OrangeCrab"
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
           (reference "R1") (unit 1)
-        )
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
-          (reference "R?") (unit 1)
         )
       )
     )
@@ -2443,9 +2483,6 @@
         (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
           (reference "R2") (unit 1)
         )
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abc9a87"
-          (reference "R?") (unit 1)
-        )
       )
     )
   )
@@ -2466,6 +2503,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7fb92cd6-da1c-4c55-ad0e-9a4932172cd8))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0102") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:C") (at 90.17 99.06 0) (mirror y) (unit 1)
@@ -2560,6 +2604,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 74b00e11-3520-43d3-8461-af1ce8d53b82))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0105") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "gkl_power:GND") (at 90.17 105.41 0) (unit 1)
@@ -2578,5 +2629,12 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e85f701f-3f86-457b-8e11-2ed142a86dab))
+    (instances
+      (project "OrangeCrab"
+        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005abd38f2"
+          (reference "#PWR0106") (unit 1)
+        )
+      )
+    )
   )
 )

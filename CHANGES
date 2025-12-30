@@ -1,0 +1,15 @@
+ECP5U-25->ECP5UM-25
+
+R3 GND->VCCAUXA0
+P5 GND->VCCAUXA0
+
+P10 GND->VCCA0
+R10 GND->VCCA0
+
+VCCA0=1.1V 5G(1.2V)
+VCCAUXA0=2.5V
+VCCHTX=1.1V 5G(1.2V)
+VCCHRX=1.1V 5G(1.2V)
+
+TODO
+Add clock management chip for the 125MHz SerDes reference clock input
