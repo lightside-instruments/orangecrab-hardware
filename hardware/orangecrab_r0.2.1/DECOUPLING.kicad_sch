@@ -1,1778 +1,4865 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid caeabd2b-7da6-47fc-a757-44a84a898566)
-
-  (paper "A4")
-
-  (title_block
-    (title "Orange Crab")
-    (date "2020-11-01")
-    (rev "r0.2.1")
-    (company "Good Stuff Department")
-    (comment 3 "Licensed under CERN OHL v.1.2")
-    (comment 4 "Designed by: Greg Davill")
-  )
-
-  (lib_symbols
-    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.635 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C" (at 0.635 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0.9652 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "cap capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -0.762)
-            (xy 2.032 -0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 0.762)
-            (xy 2.032 0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "C_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "gkl_power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "gkl_power_GND" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -2.54 -8.89 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -1.27)
-            (xy -1.27 -1.27)
-          )
-          (stroke (width 0.3048) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 102.87 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 0f1cd29a-3623-4cc8-934e-3d38b44090c6)
-  )
-  (junction (at 102.87 91.44) (diameter 0) (color 0 0 0 0)
-    (uuid 2efe8f14-8926-408e-be20-6699fab5f2b4)
-  )
-  (junction (at 97.79 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid 46ad64bf-a103-4e73-a61b-c41f92e04d5e)
-  )
-  (junction (at 147.32 91.44) (diameter 0) (color 0 0 0 0)
-    (uuid 4f316386-017c-4ef2-b480-52b14f98cdc2)
-  )
-  (junction (at 59.69 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 5243e654-c41d-4d55-9f1f-f2e40c423d97)
-  )
-  (junction (at 59.69 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid 67db8d8c-2333-40f8-8750-27a990260b06)
-  )
-  (junction (at 124.46 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 6bc750eb-1062-4d87-8121-e87a83080c74)
-  )
-  (junction (at 97.79 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid 7585fcb2-4027-4208-bfe0-540f3d0d1314)
-  )
-  (junction (at 123.19 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid 79c18264-b293-45da-8f69-65e0e18315e9)
-  )
-  (junction (at 33.02 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid 7b98e242-d86a-4051-a915-c452733b0cc1)
-  )
-  (junction (at 38.1 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid 7e209455-ac50-46c8-be71-e06d6237bd49)
-  )
-  (junction (at 38.1 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 80ae4c71-be59-4494-bd73-ccf483af0e24)
-  )
-  (junction (at 119.38 101.6) (diameter 0) (color 0 0 0 0)
-    (uuid 8410a1b8-405e-421c-86cc-86f9a815a7be)
-  )
-  (junction (at 54.61 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid 88f5b7ec-88ab-468a-beb6-89ddf6ff2fdc)
-  )
-  (junction (at 81.28 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid 9c23e263-d054-4995-beeb-1c50cbd7b938)
-  )
-  (junction (at 142.24 101.6) (diameter 0) (color 0 0 0 0)
-    (uuid b42f1335-7f56-440f-b812-e284fdc0f6da)
-  )
-  (junction (at 118.11 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid b77a7a43-af47-4055-8aa3-03c9a240172f)
-  )
-  (junction (at 97.79 101.6) (diameter 0) (color 0 0 0 0)
-    (uuid ba3974ef-6e96-4f8f-9a25-587dad608194)
-  )
-  (junction (at 102.87 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid d2756e14-c345-4d03-8681-27078172534d)
-  )
-  (junction (at 76.2 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid d2928949-f8c0-4ecd-be93-6e0cdfc9d839)
-  )
-  (junction (at 54.61 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid de0189a0-410e-49e3-bc41-ba6d5710a4c6)
-  )
-  (junction (at 119.38 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid e614dbae-82ac-4afe-8b10-0fe7c97abaac)
-  )
-  (junction (at 33.02 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid eddb7556-1eb3-4a72-8c44-a00e093050f0)
-  )
-  (junction (at 124.46 91.44) (diameter 0) (color 0 0 0 0)
-    (uuid f836517c-8941-4a1f-a15e-e48671af9c59)
-  )
-
-  (wire (pts (xy 142.24 100.33) (xy 142.24 101.6))
-    (stroke (width 0) (type default))
-    (uuid 0a00accf-af45-4d5d-bdb1-b5f255939b27)
-  )
-  (wire (pts (xy 33.02 39.37) (xy 33.02 40.64))
-    (stroke (width 0) (type default))
-    (uuid 0b136b03-543e-4648-ab70-00cd7d177ba4)
-  )
-  (wire (pts (xy 118.11 29.21) (xy 123.19 29.21))
-    (stroke (width 0) (type default))
-    (uuid 0d2dcb81-99ac-4be9-bf72-6ef49fecc974)
-  )
-  (wire (pts (xy 97.79 91.44) (xy 102.87 91.44))
-    (stroke (width 0) (type default))
-    (uuid 12e19621-2731-409e-a86a-634c92a0672a)
-  )
-  (wire (pts (xy 97.79 71.12) (xy 97.79 72.39))
-    (stroke (width 0) (type default))
-    (uuid 16121a13-c5e3-48a2-9889-2b350ab4ecfc)
-  )
-  (wire (pts (xy 124.46 62.23) (xy 124.46 60.96))
-    (stroke (width 0) (type default))
-    (uuid 18363a97-2f53-4e0f-b472-0f679ad135dc)
-  )
-  (wire (pts (xy 97.79 38.1) (xy 97.79 39.37))
-    (stroke (width 0) (type default))
-    (uuid 1a9808bd-2482-423b-869d-10ac11f83e0a)
-  )
-  (wire (pts (xy 33.02 71.12) (xy 33.02 72.39))
-    (stroke (width 0) (type default))
-    (uuid 1f16fe7a-e497-431e-870a-cb6e51852376)
-  )
-  (wire (pts (xy 142.24 101.6) (xy 142.24 102.87))
-    (stroke (width 0) (type default))
-    (uuid 21902fb2-9adb-4afe-8f88-10419af65ea7)
-  )
-  (wire (pts (xy 33.02 62.23) (xy 38.1 62.23))
-    (stroke (width 0) (type default))
-    (uuid 221ab8d0-c28a-483b-a187-fe1fb21691f6)
-  )
-  (wire (pts (xy 124.46 101.6) (xy 124.46 100.33))
-    (stroke (width 0) (type default))
-    (uuid 2388c812-8d35-4cdb-b836-254709836eb7)
-  )
-  (wire (pts (xy 38.1 72.39) (xy 38.1 71.12))
-    (stroke (width 0) (type default))
-    (uuid 24fc4372-9786-4ed8-97a3-a657b4b4e673)
-  )
-  (wire (pts (xy 38.1 62.23) (xy 38.1 60.96))
-    (stroke (width 0) (type default))
-    (uuid 2502ef17-0091-4333-82b7-72281da22dfb)
-  )
-  (wire (pts (xy 118.11 39.37) (xy 118.11 40.64))
-    (stroke (width 0) (type default))
-    (uuid 2998b801-9e21-4ee7-9b4a-c2a4e8dbc612)
-  )
-  (wire (pts (xy 102.87 62.23) (xy 102.87 60.96))
-    (stroke (width 0) (type default))
-    (uuid 2a23ae1d-8e0d-40dc-a0e1-69f665997ee9)
-  )
-  (wire (pts (xy 81.28 39.37) (xy 81.28 38.1))
-    (stroke (width 0) (type default))
-    (uuid 2b254052-d07d-497f-9c53-d6341c45ce57)
-  )
-  (wire (pts (xy 97.79 39.37) (xy 102.87 39.37))
-    (stroke (width 0) (type default))
-    (uuid 2e3ea8c7-328a-4b72-835e-a3a626022356)
-  )
-  (wire (pts (xy 33.02 38.1) (xy 33.02 39.37))
-    (stroke (width 0) (type default))
-    (uuid 2e70363d-6243-44e4-818d-2816dae92087)
-  )
-  (wire (pts (xy 124.46 92.71) (xy 124.46 91.44))
-    (stroke (width 0) (type default))
-    (uuid 32790f44-5da4-4675-9e5d-f226875d4b22)
-  )
-  (wire (pts (xy 97.79 39.37) (xy 97.79 40.64))
-    (stroke (width 0) (type default))
-    (uuid 338dc1a0-e021-45ce-b758-4301b37ec91f)
-  )
-  (wire (pts (xy 124.46 63.5) (xy 124.46 62.23))
-    (stroke (width 0) (type default))
-    (uuid 350bc236-b49c-46de-926e-e28b79947424)
-  )
-  (wire (pts (xy 76.2 29.21) (xy 81.28 29.21))
-    (stroke (width 0) (type default))
-    (uuid 35c3b2c8-7051-425c-bac9-ac3f033a5f62)
-  )
-  (wire (pts (xy 102.87 63.5) (xy 102.87 62.23))
-    (stroke (width 0) (type default))
-    (uuid 3693829a-2dda-4544-a9da-189539708622)
-  )
-  (wire (pts (xy 119.38 100.33) (xy 119.38 101.6))
-    (stroke (width 0) (type default))
-    (uuid 36dd83a1-3605-45ea-800c-b5c5e2e93c74)
-  )
-  (wire (pts (xy 142.24 92.71) (xy 142.24 91.44))
-    (stroke (width 0) (type default))
-    (uuid 418a87bc-a35d-4e7a-89ba-246825b371ff)
-  )
-  (wire (pts (xy 119.38 72.39) (xy 124.46 72.39))
-    (stroke (width 0) (type default))
-    (uuid 45287487-c873-4896-b475-65f1755da2de)
-  )
-  (wire (pts (xy 33.02 39.37) (xy 38.1 39.37))
-    (stroke (width 0) (type default))
-    (uuid 4e24d879-5d99-4b5f-9634-f45fc5e5b7d0)
-  )
-  (wire (pts (xy 97.79 101.6) (xy 97.79 102.87))
-    (stroke (width 0) (type default))
-    (uuid 512e66a3-471c-424e-bed0-e45ad90844a1)
-  )
-  (wire (pts (xy 54.61 62.23) (xy 59.69 62.23))
-    (stroke (width 0) (type default))
-    (uuid 57c88fc0-12bf-4dbf-b1ff-93d76ebb2b5c)
-  )
-  (wire (pts (xy 59.69 39.37) (xy 59.69 38.1))
-    (stroke (width 0) (type default))
-    (uuid 5dd05abd-5501-4007-bff3-c824cd331af8)
-  )
-  (wire (pts (xy 118.11 30.48) (xy 118.11 29.21))
-    (stroke (width 0) (type default))
-    (uuid 6e4d8e2b-df12-4eeb-9fc1-02310eedf788)
-  )
-  (wire (pts (xy 97.79 30.48) (xy 97.79 29.21))
-    (stroke (width 0) (type default))
-    (uuid 6f0ab9ec-4366-4dfc-88b2-e6c0d9681f75)
-  )
-  (wire (pts (xy 118.11 38.1) (xy 118.11 39.37))
-    (stroke (width 0) (type default))
-    (uuid 702251d1-9549-42f1-863d-cb7f45de0b37)
-  )
-  (wire (pts (xy 33.02 30.48) (xy 33.02 29.21))
-    (stroke (width 0) (type default))
-    (uuid 70670b0f-4886-4e25-9de4-a1f2560d4514)
-  )
-  (wire (pts (xy 54.61 30.48) (xy 54.61 29.21))
-    (stroke (width 0) (type default))
-    (uuid 72c321f9-ba21-4f7c-aa05-c6ac8a0d8949)
-  )
-  (wire (pts (xy 102.87 101.6) (xy 102.87 100.33))
-    (stroke (width 0) (type default))
-    (uuid 747fbde8-0f1c-4081-a74f-a22ded04764a)
-  )
-  (wire (pts (xy 119.38 62.23) (xy 124.46 62.23))
-    (stroke (width 0) (type default))
-    (uuid 763f6286-82d0-4df3-a1b5-0dcc3f685103)
-  )
-  (wire (pts (xy 54.61 39.37) (xy 59.69 39.37))
-    (stroke (width 0) (type default))
-    (uuid 7bde697b-6b57-4052-9035-c0f292f9a30f)
-  )
-  (wire (pts (xy 124.46 72.39) (xy 124.46 71.12))
-    (stroke (width 0) (type default))
-    (uuid 7d435d9c-495f-43ef-87ff-e74fd03edcd7)
-  )
-  (wire (pts (xy 147.32 91.44) (xy 147.32 90.17))
-    (stroke (width 0) (type default))
-    (uuid 7d62de49-e94c-4022-bdd2-378165382ff2)
-  )
-  (wire (pts (xy 102.87 91.44) (xy 102.87 90.17))
-    (stroke (width 0) (type default))
-    (uuid 80b2ff16-ff80-4caa-89a5-60eddcd7d863)
-  )
-  (wire (pts (xy 54.61 72.39) (xy 54.61 73.66))
-    (stroke (width 0) (type default))
-    (uuid 82206f63-8859-470a-ac10-92aa9411b443)
-  )
-  (wire (pts (xy 119.38 72.39) (xy 119.38 73.66))
-    (stroke (width 0) (type default))
-    (uuid 842bd400-1e72-4fa8-a39d-1be459ef1e70)
-  )
-  (wire (pts (xy 76.2 39.37) (xy 81.28 39.37))
-    (stroke (width 0) (type default))
-    (uuid 85e27fb2-4802-41b3-a5f2-1284087c3227)
-  )
-  (wire (pts (xy 38.1 29.21) (xy 38.1 27.94))
-    (stroke (width 0) (type default))
-    (uuid 898e3921-62e6-4fa0-820d-88bf327a24f3)
-  )
-  (wire (pts (xy 81.28 29.21) (xy 81.28 27.94))
-    (stroke (width 0) (type default))
-    (uuid 8c3811d9-5267-4fdb-b67a-f4d3d30eb1d6)
-  )
-  (wire (pts (xy 102.87 92.71) (xy 102.87 91.44))
-    (stroke (width 0) (type default))
-    (uuid 93dffb05-b280-4c10-881f-8138d50888c4)
-  )
-  (wire (pts (xy 119.38 101.6) (xy 124.46 101.6))
-    (stroke (width 0) (type default))
-    (uuid 9abc96b9-20da-4d9e-82f6-74a2daf7ee3d)
-  )
-  (wire (pts (xy 119.38 101.6) (xy 119.38 102.87))
-    (stroke (width 0) (type default))
-    (uuid a30e2967-90b6-4a91-aad9-8d268ac4be6c)
-  )
-  (wire (pts (xy 59.69 63.5) (xy 59.69 62.23))
-    (stroke (width 0) (type default))
-    (uuid a348b74c-943d-4784-bc82-d85ec57233b2)
-  )
-  (wire (pts (xy 59.69 62.23) (xy 59.69 60.96))
-    (stroke (width 0) (type default))
-    (uuid a4419748-ec11-4a68-98ad-5eca0d7eb686)
-  )
-  (wire (pts (xy 119.38 63.5) (xy 119.38 62.23))
-    (stroke (width 0) (type default))
-    (uuid a5568262-9614-48e9-b17f-8579466483c3)
-  )
-  (wire (pts (xy 59.69 29.21) (xy 59.69 27.94))
-    (stroke (width 0) (type default))
-    (uuid a78865c1-b755-432c-9f30-7b71bdccfa42)
-  )
-  (wire (pts (xy 59.69 30.48) (xy 59.69 29.21))
-    (stroke (width 0) (type default))
-    (uuid a7ba6d96-ff81-414f-8a75-987f93616be5)
-  )
-  (wire (pts (xy 54.61 72.39) (xy 59.69 72.39))
-    (stroke (width 0) (type default))
-    (uuid a8950461-8921-4507-ad32-eb62bad09f88)
-  )
-  (wire (pts (xy 147.32 92.71) (xy 147.32 91.44))
-    (stroke (width 0) (type default))
-    (uuid a8c464b1-701a-4b23-8402-93c0dc17720f)
-  )
-  (wire (pts (xy 97.79 63.5) (xy 97.79 62.23))
-    (stroke (width 0) (type default))
-    (uuid aa8e1c91-d82e-4e76-9677-d75ffa255132)
-  )
-  (wire (pts (xy 142.24 91.44) (xy 147.32 91.44))
-    (stroke (width 0) (type default))
-    (uuid aaa28b4c-1c4b-4c6d-8943-e3c365ebeea4)
-  )
-  (wire (pts (xy 97.79 72.39) (xy 97.79 73.66))
-    (stroke (width 0) (type default))
-    (uuid ad12de78-3e4b-4013-9e01-a999e1fdb903)
-  )
-  (wire (pts (xy 97.79 62.23) (xy 102.87 62.23))
-    (stroke (width 0) (type default))
-    (uuid b04be7fe-96d2-4bcf-8fa6-c4963fd6426d)
-  )
-  (wire (pts (xy 81.28 30.48) (xy 81.28 29.21))
-    (stroke (width 0) (type default))
-    (uuid b26f668f-d658-432b-ac6c-44a927cbc0e0)
-  )
-  (wire (pts (xy 38.1 63.5) (xy 38.1 62.23))
-    (stroke (width 0) (type default))
-    (uuid b2969d0d-4a4c-4d1f-8301-7069bb4cb058)
-  )
-  (wire (pts (xy 33.02 72.39) (xy 38.1 72.39))
-    (stroke (width 0) (type default))
-    (uuid b2c36899-103d-4f9b-bab2-46db3dada740)
-  )
-  (wire (pts (xy 54.61 29.21) (xy 59.69 29.21))
-    (stroke (width 0) (type default))
-    (uuid b8d797bc-8344-4c39-b72f-4b7364872083)
-  )
-  (wire (pts (xy 97.79 29.21) (xy 102.87 29.21))
-    (stroke (width 0) (type default))
-    (uuid bac49a74-e47c-4155-877f-79fd562214a5)
-  )
-  (wire (pts (xy 119.38 92.71) (xy 119.38 91.44))
-    (stroke (width 0) (type default))
-    (uuid bc34c284-a337-41fa-800d-132aab101419)
-  )
-  (wire (pts (xy 118.11 39.37) (xy 123.19 39.37))
-    (stroke (width 0) (type default))
-    (uuid bc7fabdd-6ded-476c-a6ac-8d93859e2502)
-  )
-  (wire (pts (xy 119.38 91.44) (xy 124.46 91.44))
-    (stroke (width 0) (type default))
-    (uuid bf567eea-52a8-44f3-a936-3619a16a9c4b)
-  )
-  (wire (pts (xy 142.24 101.6) (xy 147.32 101.6))
-    (stroke (width 0) (type default))
-    (uuid c31ea48b-6b47-4e06-8c08-097d78bdf6bb)
-  )
-  (wire (pts (xy 54.61 71.12) (xy 54.61 72.39))
-    (stroke (width 0) (type default))
-    (uuid c44d1323-d11c-4571-9a65-ef52b4846ea7)
-  )
-  (wire (pts (xy 102.87 39.37) (xy 102.87 38.1))
-    (stroke (width 0) (type default))
-    (uuid ce72447b-00eb-420f-a4d1-a18bdd8727b9)
-  )
-  (wire (pts (xy 33.02 72.39) (xy 33.02 73.66))
-    (stroke (width 0) (type default))
-    (uuid cf8f1ac9-9fba-44ee-898e-36693e56344d)
-  )
-  (wire (pts (xy 76.2 39.37) (xy 76.2 40.64))
-    (stroke (width 0) (type default))
-    (uuid d070cbf1-b60b-42de-bbe4-09c92c103006)
-  )
-  (wire (pts (xy 33.02 29.21) (xy 38.1 29.21))
-    (stroke (width 0) (type default))
-    (uuid d628a283-30db-4d90-9b5c-09d569fe39e0)
-  )
-  (wire (pts (xy 97.79 100.33) (xy 97.79 101.6))
-    (stroke (width 0) (type default))
-    (uuid d75c4f85-5348-48c1-aae3-bed315a32cd1)
-  )
-  (wire (pts (xy 54.61 39.37) (xy 54.61 40.64))
-    (stroke (width 0) (type default))
-    (uuid d7c1fa09-ab8a-47a9-9497-c11ab69f665b)
-  )
-  (wire (pts (xy 123.19 29.21) (xy 123.19 27.94))
-    (stroke (width 0) (type default))
-    (uuid d8448e42-7db8-4636-b1b9-d2e4f2351747)
-  )
-  (wire (pts (xy 59.69 72.39) (xy 59.69 71.12))
-    (stroke (width 0) (type default))
-    (uuid d86cfe7b-f7d9-4c8f-b931-35e92f06501a)
-  )
-  (wire (pts (xy 123.19 30.48) (xy 123.19 29.21))
-    (stroke (width 0) (type default))
-    (uuid dc4eb7ed-02ba-4610-9b2c-db0e82bc4e56)
-  )
-  (wire (pts (xy 76.2 38.1) (xy 76.2 39.37))
-    (stroke (width 0) (type default))
-    (uuid dcc112ce-21e8-423b-b311-b786c50214ca)
-  )
-  (wire (pts (xy 97.79 101.6) (xy 102.87 101.6))
-    (stroke (width 0) (type default))
-    (uuid ddffd504-cc12-4fba-bc4a-97426a1527b7)
-  )
-  (wire (pts (xy 119.38 71.12) (xy 119.38 72.39))
-    (stroke (width 0) (type default))
-    (uuid e6f51cf2-8c6a-467b-b5e5-dceb2098d536)
-  )
-  (wire (pts (xy 123.19 39.37) (xy 123.19 38.1))
-    (stroke (width 0) (type default))
-    (uuid e95a8549-e87b-4e28-86ea-91b54ba72d06)
-  )
-  (wire (pts (xy 102.87 72.39) (xy 102.87 71.12))
-    (stroke (width 0) (type default))
-    (uuid e998c3f9-4bcd-40ae-9fbc-a301f0a686fb)
-  )
-  (wire (pts (xy 102.87 29.21) (xy 102.87 27.94))
-    (stroke (width 0) (type default))
-    (uuid ebf371ec-ba5e-4c01-a6c1-903ae048bb02)
-  )
-  (wire (pts (xy 38.1 30.48) (xy 38.1 29.21))
-    (stroke (width 0) (type default))
-    (uuid eccc4dea-45b0-4386-8ed0-826788173c48)
-  )
-  (wire (pts (xy 147.32 101.6) (xy 147.32 100.33))
-    (stroke (width 0) (type default))
-    (uuid ee7030e9-4835-4a10-82ce-d1d96bd6db49)
-  )
-  (wire (pts (xy 97.79 92.71) (xy 97.79 91.44))
-    (stroke (width 0) (type default))
-    (uuid eed229d2-086a-4e07-abf9-7a00a7caef2d)
-  )
-  (wire (pts (xy 54.61 63.5) (xy 54.61 62.23))
-    (stroke (width 0) (type default))
-    (uuid f4f3db4e-cbd9-4b4e-b278-04e423733166)
-  )
-  (wire (pts (xy 54.61 38.1) (xy 54.61 39.37))
-    (stroke (width 0) (type default))
-    (uuid f61e52b9-1f43-49fa-a377-38bd719b17c1)
-  )
-  (wire (pts (xy 76.2 30.48) (xy 76.2 29.21))
-    (stroke (width 0) (type default))
-    (uuid f6532bf7-767c-4701-bc96-ad66a0bcc27d)
-  )
-  (wire (pts (xy 38.1 39.37) (xy 38.1 38.1))
-    (stroke (width 0) (type default))
-    (uuid f69c9f65-59bf-48e5-818f-b59657b82b4a)
-  )
-  (wire (pts (xy 33.02 63.5) (xy 33.02 62.23))
-    (stroke (width 0) (type default))
-    (uuid f885c4c4-d711-4ade-80b6-6b1e73a58387)
-  )
-  (wire (pts (xy 97.79 72.39) (xy 102.87 72.39))
-    (stroke (width 0) (type default))
-    (uuid fa51c9fb-3369-4764-9c0c-dfd934275c86)
-  )
-  (wire (pts (xy 124.46 91.44) (xy 124.46 90.17))
-    (stroke (width 0) (type default))
-    (uuid fdd9f72e-3464-41b6-953c-336222a1f80b)
-  )
-  (wire (pts (xy 102.87 30.48) (xy 102.87 29.21))
-    (stroke (width 0) (type default))
-    (uuid fe6839a7-4bfc-47a3-8a8d-3e74da45e4d3)
-  )
-
-  (global_label "P3.3V" (shape passive) (at 102.87 90.17 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 002cf8f0-af03-4dd3-bd9f-b2a42a34be77)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 102.87 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P2.5V" (shape passive) (at 59.69 60.96 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 0d00eaae-e58f-4393-8256-44783d7b3811)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P1.1V" (shape passive) (at 59.69 27.94 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 14abe94e-e3fb-41b3-a2c8-3ff1d9a502af)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P1.35V" (shape passive) (at 102.87 60.96 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 16697194-063e-4b7d-8d52-ed5be703c368)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 102.87 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P3.3V" (shape passive) (at 147.32 90.17 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 32444f54-a985-4e9b-ac9b-8de299bcb68a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 147.32 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P2.5V" (shape passive) (at 38.1 60.96 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 38e24810-afb2-47f7-ae7a-719cbff95dae)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P1.1V" (shape passive) (at 38.1 27.94 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 65fdba09-3a76-49e6-9c52-fe016b728407)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P3.3V" (shape passive) (at 124.46 90.17 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 6f8d67e5-580b-4e89-859b-6d8064e0bdd9)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 124.46 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P1.35V" (shape passive) (at 124.46 60.96 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 8e0e7bba-3bd8-40e0-a75b-f77a535eb240)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 124.46 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P1.1V" (shape passive) (at 102.87 27.94 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid c1624c82-3dd3-4e0a-906e-44c5d3e12d2a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 102.87 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P1.1V" (shape passive) (at 123.19 27.94 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e89357df-594f-4832-b5dd-22ed6166fde0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 123.19 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "P1.1V" (shape passive) (at 81.28 27.94 90)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid f9285c93-6b64-42a1-9709-a0512ed0c67b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 81.28 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 33.02 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d35d269)
-    (property "Reference" "C48" (at 30.099 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 30.099 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 33.9852 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 33.02 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 33.02 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 33.02 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 33.02 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 33.02 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 61ff759a-6702-480d-b5d9-31ff9016e002))
-    (pin "1" (uuid 5eb20e7b-510b-4382-a232-b3540a345d5a))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C48") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 33.02 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d35d88e)
-    (property "Reference" "#PWR0148" (at 33.02 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 33.0962 43.8404 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 30.48 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 33.02 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c9e8ad2b-7f54-4a8a-b11c-3f0a711e4496))
-  )
-
-  (symbol (lib_id "Device:C") (at 38.1 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d35dbfc)
-    (property "Reference" "C50" (at 41.021 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 41.021 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 39.0652 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 38.1 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 38.1 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 38.1 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 38.1 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 38.1 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a674d805-ea79-43cf-91ea-bdb9e3619a15))
-    (pin "2" (uuid 487cf573-790f-4356-880f-94feedf5e7d7))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C50") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 54.61 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d35eccf)
-    (property "Reference" "C52" (at 51.689 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 51.689 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 55.5752 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 54.61 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 54.61 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 54.61 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 54.61 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 54.61 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b33feb73-1ee5-41e1-8fdf-d895308451c0))
-    (pin "2" (uuid 22107527-3a3d-4c2e-a052-ea1865a7f3dc))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C52") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 54.61 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d35ecd9)
-    (property "Reference" "#PWR0149" (at 54.61 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 54.6862 43.8404 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 52.07 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 54.61 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 776e1f40-2e35-4ec5-a6a6-e664832b82c6))
-  )
-
-  (symbol (lib_id "Device:C") (at 59.69 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d35ece3)
-    (property "Reference" "C54" (at 62.611 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 62.611 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 60.6552 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 59.69 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 59.69 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 59.69 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 59.69 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 59.69 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ba3dba11-4109-4296-b068-e290c875a68b))
-    (pin "2" (uuid 1213d077-3498-475b-a707-1c8a9f1c1bea))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C54") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 76.2 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d360248)
-    (property "Reference" "C56" (at 73.279 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 73.279 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 77.1652 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 76.2 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 76.2 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 76.2 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 76.2 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 76.2 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c722969f-40a7-4ea5-81dc-cf61bc9173f4))
-    (pin "2" (uuid 18c138ef-60ba-4d66-934b-79d0df701692))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C56") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 76.2 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d360252)
-    (property "Reference" "#PWR0150" (at 76.2 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 76.2762 43.8404 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 73.66 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 76.2 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2b906a28-552f-4ac5-879e-697c67f85f02))
-  )
-
-  (symbol (lib_id "Device:C") (at 81.28 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36025c)
-    (property "Reference" "C57" (at 84.201 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 84.201 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 82.2452 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 81.28 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 81.28 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 81.28 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 81.28 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 81.28 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 13b1fb4a-c611-46e9-932b-28a238256f6a))
-    (pin "2" (uuid a90e12ca-8406-45b5-afd9-f5e36363fbe9))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C57") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 97.79 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d360271)
-    (property "Reference" "C58" (at 94.869 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 94.869 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 98.7552 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 97.79 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 97.79 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 97.79 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 97.79 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 97.79 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5b544d35-5678-4175-8ad1-aa0471181e37))
-    (pin "2" (uuid 839d210c-58d6-48d1-a5a9-56f67574312a))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C58") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 97.79 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36027b)
-    (property "Reference" "#PWR0151" (at 97.79 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 97.8662 43.8404 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 95.25 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 97.79 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a3391728-1cab-4275-9849-543e02644b07))
-  )
-
-  (symbol (lib_id "Device:C") (at 102.87 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d360285)
-    (property "Reference" "C59" (at 105.791 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 105.791 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 103.8352 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 102.87 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 102.87 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 102.87 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 102.87 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 102.87 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a2f7a57b-3923-4885-93ae-8cf1b2b1182b))
-    (pin "2" (uuid 6bae471c-1f58-4105-9ead-8dadbe143f27))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C59") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 118.11 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d362a3c)
-    (property "Reference" "C60" (at 115.189 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 115.189 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 119.0752 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 118.11 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 118.11 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 118.11 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 118.11 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 118.11 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1523f8bf-fb3f-40d1-8e94-dd226797cf0e))
-    (pin "2" (uuid fc88f849-5009-4d75-9fdd-ff3342c8c9ff))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C60") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 118.11 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d362a46)
-    (property "Reference" "#PWR0152" (at 118.11 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 118.1862 43.8404 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 115.57 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 118.11 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8a95291f-fa3c-4920-8d82-86c43c94f791))
-  )
-
-  (symbol (lib_id "Device:C") (at 123.19 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d362a50)
-    (property "Reference" "C61" (at 126.111 33.1216 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 126.111 35.433 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 124.1552 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 123.19 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 123.19 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 123.19 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 123.19 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 123.19 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid eb85068d-adb3-46f3-92b2-7e4e1d70e2c7))
-    (pin "2" (uuid 644c36da-9415-4278-9a13-7209bfed391b))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C61") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 33.02 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d364700)
-    (property "Reference" "C49" (at 30.099 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 30.099 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 33.9852 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 33.02 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 33.02 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 33.02 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 33.02 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 33.02 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5a1863d8-3e0a-431f-bca9-ced08f1af321))
-    (pin "2" (uuid 5ae0c2ab-50fe-47c1-b5e9-5dc17f16a988))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C49") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 33.02 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36470a)
-    (property "Reference" "#PWR0153" (at 33.02 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 33.0962 76.8604 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 30.48 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 33.02 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 98fc3563-17da-47ae-9ba9-88008fbc818a))
-  )
-
-  (symbol (lib_id "Device:C") (at 38.1 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d364714)
-    (property "Reference" "C51" (at 41.021 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 41.021 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 39.0652 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 38.1 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 38.1 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 38.1 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 38.1 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 38.1 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5366a177-04f9-472a-90a3-79f5e9807ae8))
-    (pin "2" (uuid 6a29d601-da9b-425b-b628-94e01ccbe4c0))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C51") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 54.61 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d364729)
-    (property "Reference" "C53" (at 51.689 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 51.689 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 55.5752 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 54.61 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 54.61 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 54.61 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 54.61 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 54.61 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 851026c7-17d6-4b8c-8db0-eda9b4370bb8))
-    (pin "2" (uuid 7dcf2d88-1561-41e6-9418-915135b8dedd))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C53") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 54.61 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d364733)
-    (property "Reference" "#PWR0154" (at 54.61 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 54.6862 76.8604 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 52.07 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 54.61 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid cc2de324-3b76-418d-98ce-0fbc9d6bbf15))
-  )
-
-  (symbol (lib_id "Device:C") (at 59.69 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36473d)
-    (property "Reference" "C55" (at 62.611 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 62.611 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 60.6552 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 59.69 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 59.69 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 59.69 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 59.69 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 59.69 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0ee40c4f-65b2-407b-820f-8e6344c1f5fe))
-    (pin "2" (uuid 5ad8d7fd-7f82-46fe-80a5-f842fdd82e80))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C55") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 97.79 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36be90)
-    (property "Reference" "C62" (at 94.869 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 94.869 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 98.7552 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 97.79 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 97.79 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 97.79 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 97.79 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 97.79 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 758820d6-451f-4136-b576-b61ea33d3742))
-    (pin "2" (uuid fd7ee9c2-9433-42e3-97a5-e6f84369bf18))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C62") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 97.79 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36be9a)
-    (property "Reference" "#PWR0155" (at 97.79 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 97.8662 76.8604 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 95.25 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 97.79 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 31e0530b-c581-4afc-8021-9f6f38ca5f6a))
-  )
-
-  (symbol (lib_id "Device:C") (at 102.87 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36bea4)
-    (property "Reference" "C64" (at 105.791 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 105.791 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 103.8352 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 102.87 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 102.87 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 102.87 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 102.87 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 102.87 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 10d034a5-9485-4804-864c-6562d0e37202))
-    (pin "2" (uuid 4931e776-5ce5-4ee5-98ff-fe036d5bc08e))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C64") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 119.38 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36beb9)
-    (property "Reference" "C66" (at 116.459 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 116.459 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 120.3452 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 119.38 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 119.38 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 119.38 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 119.38 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 119.38 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9ad2d617-fad1-413f-8abd-c4523d3f06ec))
-    (pin "2" (uuid d595ff71-1d0c-4c6f-85a5-896725eca827))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C66") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 119.38 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36bec3)
-    (property "Reference" "#PWR0156" (at 119.38 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 119.4562 76.8604 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 116.84 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 119.38 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a7afd894-0110-413c-b02f-63179343f660))
-  )
-
-  (symbol (lib_id "Device:C") (at 124.46 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d36becd)
-    (property "Reference" "C68" (at 127.381 66.1416 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 127.381 68.453 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 125.4252 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 124.46 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 124.46 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 124.46 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 124.46 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 124.46 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2182e913-156a-443d-bed0-b809eca91d66))
-    (pin "2" (uuid d7034591-40bc-4ea7-9db8-3e30e1dc5476))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C68") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 97.79 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d3707f5)
-    (property "Reference" "C63" (at 94.869 95.3516 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 94.869 97.663 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 98.7552 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 97.79 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 97.79 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 97.79 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 97.79 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 97.79 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ef8098ac-0334-4fc2-8da9-f1ddd5d85adb))
-    (pin "2" (uuid 88e16fc1-3159-4629-b36d-b94b598f339c))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C63") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 97.79 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d3707ff)
-    (property "Reference" "#PWR0157" (at 97.79 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 97.8662 106.0704 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 95.25 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 97.79 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7849685d-472f-4eed-b3b6-b524aa726fbe))
-  )
-
-  (symbol (lib_id "Device:C") (at 102.87 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d370809)
-    (property "Reference" "C65" (at 105.791 95.3516 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 105.791 97.663 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 103.8352 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 102.87 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 102.87 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 102.87 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 102.87 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 102.87 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d82633ca-ef7a-448e-8988-b72bc2f6b1c4))
-    (pin "2" (uuid b08c2336-ba53-4d4a-99fd-f0af56dba328))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C65") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 119.38 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d37081e)
-    (property "Reference" "C67" (at 116.459 95.3516 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 116.459 97.663 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 120.3452 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 119.38 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 119.38 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 119.38 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 119.38 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 119.38 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1a1b7b83-9f95-4218-96e2-6a50a61ddc0a))
-    (pin "2" (uuid 56233b30-ed6c-4bd5-8950-7f5e6d63b99c))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C67") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 119.38 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d370828)
-    (property "Reference" "#PWR0158" (at 119.38 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 119.4562 106.0704 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 116.84 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 119.38 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a4cb4696-1299-4ee0-8f37-80c81174402b))
-  )
-
-  (symbol (lib_id "Device:C") (at 124.46 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d370832)
-    (property "Reference" "C69" (at 127.381 95.3516 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 127.381 97.663 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 125.4252 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 124.46 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 124.46 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 124.46 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 124.46 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 124.46 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f82bb4df-0d0f-4932-8fee-c417d6715ffe))
-    (pin "2" (uuid fa514d1b-6e7a-4ec3-bad6-b60ad8e9f83a))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C69") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 142.24 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d761cbe)
-    (property "Reference" "C74" (at 139.319 95.3516 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10nF" (at 139.319 97.663 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 143.2052 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 142.24 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 142.24 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03B103KP3NNNC" (at 142.24 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 142.24 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB103" (at 142.24 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d71a9b12-a980-4850-bd7e-d942966d5426))
-    (pin "2" (uuid fde51395-eed0-45a4-b643-ace85efc049a))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C74") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "gkl_power:GND") (at 142.24 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d761cc8)
-    (property "Reference" "#PWR0163" (at 142.24 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 142.3162 106.0704 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 139.7 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 142.24 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 56f77724-213b-4ccf-b570-8459526df0d8))
-  )
-
-  (symbol (lib_id "Device:C") (at 147.32 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005d761cd2)
-    (property "Reference" "C75" (at 150.241 95.3516 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 150.241 97.663 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "gkl_dipol:C_0201_0603Metric" (at 148.2852 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 147.32 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg" "Samsung Electro-Mechanics" (at 147.32 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN" "CL03A104KQ3NNNC" (at 147.32 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg_1" "YAGEO" (at 147.32 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PN_1" "CC0201KRX5R7BB104" (at 147.32 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 01297254-a180-40db-bc89-58820c1b7931))
-    (pin "2" (uuid b3ccb248-16bd-4198-b5dc-498ca1549905))
-    (instances
-      (project "OrangeCrab"
-        (path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
-          (reference "C75") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "caeabd2b-7da6-47fc-a757-44a84a898566")
+	(paper "A4")
+	(title_block
+		(title "Orange Crab")
+		(date "2020-11-01")
+		(rev "r0.2.1")
+		(company "Good Stuff Department")
+		(comment 3 "Licensed under CERN OHL v.1.2")
+		(comment 4 "Designed by: Greg Davill")
+	)
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "gkl_power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "gkl_power_GND"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -2.54 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.3048)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 102.87 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f1cd29a-3623-4cc8-934e-3d38b44090c6")
+	)
+	(junction
+		(at 102.87 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2efe8f14-8926-408e-be20-6699fab5f2b4")
+	)
+	(junction
+		(at 97.79 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46ad64bf-a103-4e73-a61b-c41f92e04d5e")
+	)
+	(junction
+		(at 147.32 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f316386-017c-4ef2-b480-52b14f98cdc2")
+	)
+	(junction
+		(at 59.69 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5243e654-c41d-4d55-9f1f-f2e40c423d97")
+	)
+	(junction
+		(at 59.69 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67db8d8c-2333-40f8-8750-27a990260b06")
+	)
+	(junction
+		(at 124.46 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bc750eb-1062-4d87-8121-e87a83080c74")
+	)
+	(junction
+		(at 97.79 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7585fcb2-4027-4208-bfe0-540f3d0d1314")
+	)
+	(junction
+		(at 123.19 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79c18264-b293-45da-8f69-65e0e18315e9")
+	)
+	(junction
+		(at 33.02 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b98e242-d86a-4051-a915-c452733b0cc1")
+	)
+	(junction
+		(at 38.1 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e209455-ac50-46c8-be71-e06d6237bd49")
+	)
+	(junction
+		(at 38.1 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80ae4c71-be59-4494-bd73-ccf483af0e24")
+	)
+	(junction
+		(at 119.38 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8410a1b8-405e-421c-86cc-86f9a815a7be")
+	)
+	(junction
+		(at 54.61 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88f5b7ec-88ab-468a-beb6-89ddf6ff2fdc")
+	)
+	(junction
+		(at 81.28 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c23e263-d054-4995-beeb-1c50cbd7b938")
+	)
+	(junction
+		(at 142.24 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b42f1335-7f56-440f-b812-e284fdc0f6da")
+	)
+	(junction
+		(at 118.11 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b77a7a43-af47-4055-8aa3-03c9a240172f")
+	)
+	(junction
+		(at 97.79 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba3974ef-6e96-4f8f-9a25-587dad608194")
+	)
+	(junction
+		(at 102.87 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2756e14-c345-4d03-8681-27078172534d")
+	)
+	(junction
+		(at 76.2 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2928949-f8c0-4ecd-be93-6e0cdfc9d839")
+	)
+	(junction
+		(at 54.61 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de0189a0-410e-49e3-bc41-ba6d5710a4c6")
+	)
+	(junction
+		(at 119.38 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e614dbae-82ac-4afe-8b10-0fe7c97abaac")
+	)
+	(junction
+		(at 33.02 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eddb7556-1eb3-4a72-8c44-a00e093050f0")
+	)
+	(junction
+		(at 124.46 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f836517c-8941-4a1f-a15e-e48671af9c59")
+	)
+	(wire
+		(pts
+			(xy 142.24 100.33) (xy 142.24 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a00accf-af45-4d5d-bdb1-b5f255939b27")
+	)
+	(wire
+		(pts
+			(xy 33.02 39.37) (xy 33.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b136b03-543e-4648-ab70-00cd7d177ba4")
+	)
+	(wire
+		(pts
+			(xy 118.11 29.21) (xy 123.19 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d2dcb81-99ac-4be9-bf72-6ef49fecc974")
+	)
+	(wire
+		(pts
+			(xy 97.79 91.44) (xy 102.87 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12e19621-2731-409e-a86a-634c92a0672a")
+	)
+	(wire
+		(pts
+			(xy 97.79 71.12) (xy 97.79 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16121a13-c5e3-48a2-9889-2b350ab4ecfc")
+	)
+	(wire
+		(pts
+			(xy 124.46 62.23) (xy 124.46 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18363a97-2f53-4e0f-b472-0f679ad135dc")
+	)
+	(wire
+		(pts
+			(xy 97.79 38.1) (xy 97.79 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a9808bd-2482-423b-869d-10ac11f83e0a")
+	)
+	(wire
+		(pts
+			(xy 33.02 71.12) (xy 33.02 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f16fe7a-e497-431e-870a-cb6e51852376")
+	)
+	(wire
+		(pts
+			(xy 142.24 101.6) (xy 142.24 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21902fb2-9adb-4afe-8f88-10419af65ea7")
+	)
+	(wire
+		(pts
+			(xy 33.02 62.23) (xy 38.1 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "221ab8d0-c28a-483b-a187-fe1fb21691f6")
+	)
+	(wire
+		(pts
+			(xy 124.46 101.6) (xy 124.46 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2388c812-8d35-4cdb-b836-254709836eb7")
+	)
+	(wire
+		(pts
+			(xy 38.1 72.39) (xy 38.1 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24fc4372-9786-4ed8-97a3-a657b4b4e673")
+	)
+	(wire
+		(pts
+			(xy 38.1 62.23) (xy 38.1 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2502ef17-0091-4333-82b7-72281da22dfb")
+	)
+	(wire
+		(pts
+			(xy 118.11 39.37) (xy 118.11 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2998b801-9e21-4ee7-9b4a-c2a4e8dbc612")
+	)
+	(wire
+		(pts
+			(xy 102.87 62.23) (xy 102.87 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a23ae1d-8e0d-40dc-a0e1-69f665997ee9")
+	)
+	(wire
+		(pts
+			(xy 81.28 39.37) (xy 81.28 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b254052-d07d-497f-9c53-d6341c45ce57")
+	)
+	(wire
+		(pts
+			(xy 97.79 39.37) (xy 102.87 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e3ea8c7-328a-4b72-835e-a3a626022356")
+	)
+	(wire
+		(pts
+			(xy 33.02 38.1) (xy 33.02 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e70363d-6243-44e4-818d-2816dae92087")
+	)
+	(wire
+		(pts
+			(xy 124.46 92.71) (xy 124.46 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32790f44-5da4-4675-9e5d-f226875d4b22")
+	)
+	(wire
+		(pts
+			(xy 97.79 39.37) (xy 97.79 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "338dc1a0-e021-45ce-b758-4301b37ec91f")
+	)
+	(wire
+		(pts
+			(xy 124.46 63.5) (xy 124.46 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "350bc236-b49c-46de-926e-e28b79947424")
+	)
+	(wire
+		(pts
+			(xy 76.2 29.21) (xy 81.28 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35c3b2c8-7051-425c-bac9-ac3f033a5f62")
+	)
+	(wire
+		(pts
+			(xy 102.87 63.5) (xy 102.87 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3693829a-2dda-4544-a9da-189539708622")
+	)
+	(wire
+		(pts
+			(xy 119.38 100.33) (xy 119.38 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36dd83a1-3605-45ea-800c-b5c5e2e93c74")
+	)
+	(wire
+		(pts
+			(xy 142.24 92.71) (xy 142.24 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "418a87bc-a35d-4e7a-89ba-246825b371ff")
+	)
+	(wire
+		(pts
+			(xy 119.38 72.39) (xy 124.46 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45287487-c873-4896-b475-65f1755da2de")
+	)
+	(wire
+		(pts
+			(xy 33.02 39.37) (xy 38.1 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e24d879-5d99-4b5f-9634-f45fc5e5b7d0")
+	)
+	(wire
+		(pts
+			(xy 97.79 101.6) (xy 97.79 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "512e66a3-471c-424e-bed0-e45ad90844a1")
+	)
+	(wire
+		(pts
+			(xy 54.61 62.23) (xy 59.69 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c88fc0-12bf-4dbf-b1ff-93d76ebb2b5c")
+	)
+	(wire
+		(pts
+			(xy 59.69 39.37) (xy 59.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dd05abd-5501-4007-bff3-c824cd331af8")
+	)
+	(wire
+		(pts
+			(xy 118.11 30.48) (xy 118.11 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4d8e2b-df12-4eeb-9fc1-02310eedf788")
+	)
+	(wire
+		(pts
+			(xy 97.79 30.48) (xy 97.79 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f0ab9ec-4366-4dfc-88b2-e6c0d9681f75")
+	)
+	(wire
+		(pts
+			(xy 118.11 38.1) (xy 118.11 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "702251d1-9549-42f1-863d-cb7f45de0b37")
+	)
+	(wire
+		(pts
+			(xy 33.02 30.48) (xy 33.02 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70670b0f-4886-4e25-9de4-a1f2560d4514")
+	)
+	(wire
+		(pts
+			(xy 54.61 30.48) (xy 54.61 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c321f9-ba21-4f7c-aa05-c6ac8a0d8949")
+	)
+	(wire
+		(pts
+			(xy 102.87 101.6) (xy 102.87 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "747fbde8-0f1c-4081-a74f-a22ded04764a")
+	)
+	(wire
+		(pts
+			(xy 119.38 62.23) (xy 124.46 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "763f6286-82d0-4df3-a1b5-0dcc3f685103")
+	)
+	(wire
+		(pts
+			(xy 54.61 39.37) (xy 59.69 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bde697b-6b57-4052-9035-c0f292f9a30f")
+	)
+	(wire
+		(pts
+			(xy 124.46 72.39) (xy 124.46 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d435d9c-495f-43ef-87ff-e74fd03edcd7")
+	)
+	(wire
+		(pts
+			(xy 147.32 91.44) (xy 147.32 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d62de49-e94c-4022-bdd2-378165382ff2")
+	)
+	(wire
+		(pts
+			(xy 102.87 91.44) (xy 102.87 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b2ff16-ff80-4caa-89a5-60eddcd7d863")
+	)
+	(wire
+		(pts
+			(xy 54.61 72.39) (xy 54.61 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82206f63-8859-470a-ac10-92aa9411b443")
+	)
+	(wire
+		(pts
+			(xy 119.38 72.39) (xy 119.38 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "842bd400-1e72-4fa8-a39d-1be459ef1e70")
+	)
+	(wire
+		(pts
+			(xy 76.2 39.37) (xy 81.28 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85e27fb2-4802-41b3-a5f2-1284087c3227")
+	)
+	(wire
+		(pts
+			(xy 38.1 29.21) (xy 38.1 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "898e3921-62e6-4fa0-820d-88bf327a24f3")
+	)
+	(wire
+		(pts
+			(xy 81.28 29.21) (xy 81.28 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c3811d9-5267-4fdb-b67a-f4d3d30eb1d6")
+	)
+	(wire
+		(pts
+			(xy 102.87 92.71) (xy 102.87 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93dffb05-b280-4c10-881f-8138d50888c4")
+	)
+	(wire
+		(pts
+			(xy 119.38 101.6) (xy 124.46 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9abc96b9-20da-4d9e-82f6-74a2daf7ee3d")
+	)
+	(wire
+		(pts
+			(xy 119.38 101.6) (xy 119.38 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a30e2967-90b6-4a91-aad9-8d268ac4be6c")
+	)
+	(wire
+		(pts
+			(xy 59.69 63.5) (xy 59.69 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a348b74c-943d-4784-bc82-d85ec57233b2")
+	)
+	(wire
+		(pts
+			(xy 59.69 62.23) (xy 59.69 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4419748-ec11-4a68-98ad-5eca0d7eb686")
+	)
+	(wire
+		(pts
+			(xy 119.38 63.5) (xy 119.38 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5568262-9614-48e9-b17f-8579466483c3")
+	)
+	(wire
+		(pts
+			(xy 59.69 29.21) (xy 59.69 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a78865c1-b755-432c-9f30-7b71bdccfa42")
+	)
+	(wire
+		(pts
+			(xy 59.69 30.48) (xy 59.69 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ba6d96-ff81-414f-8a75-987f93616be5")
+	)
+	(wire
+		(pts
+			(xy 54.61 72.39) (xy 59.69 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8950461-8921-4507-ad32-eb62bad09f88")
+	)
+	(wire
+		(pts
+			(xy 147.32 92.71) (xy 147.32 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8c464b1-701a-4b23-8402-93c0dc17720f")
+	)
+	(wire
+		(pts
+			(xy 97.79 63.5) (xy 97.79 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa8e1c91-d82e-4e76-9677-d75ffa255132")
+	)
+	(wire
+		(pts
+			(xy 142.24 91.44) (xy 147.32 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaa28b4c-1c4b-4c6d-8943-e3c365ebeea4")
+	)
+	(wire
+		(pts
+			(xy 97.79 72.39) (xy 97.79 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad12de78-3e4b-4013-9e01-a999e1fdb903")
+	)
+	(wire
+		(pts
+			(xy 97.79 62.23) (xy 102.87 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b04be7fe-96d2-4bcf-8fa6-c4963fd6426d")
+	)
+	(wire
+		(pts
+			(xy 81.28 30.48) (xy 81.28 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26f668f-d658-432b-ac6c-44a927cbc0e0")
+	)
+	(wire
+		(pts
+			(xy 38.1 63.5) (xy 38.1 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2969d0d-4a4c-4d1f-8301-7069bb4cb058")
+	)
+	(wire
+		(pts
+			(xy 33.02 72.39) (xy 38.1 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2c36899-103d-4f9b-bab2-46db3dada740")
+	)
+	(wire
+		(pts
+			(xy 54.61 29.21) (xy 59.69 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8d797bc-8344-4c39-b72f-4b7364872083")
+	)
+	(wire
+		(pts
+			(xy 97.79 29.21) (xy 102.87 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bac49a74-e47c-4155-877f-79fd562214a5")
+	)
+	(wire
+		(pts
+			(xy 119.38 92.71) (xy 119.38 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc34c284-a337-41fa-800d-132aab101419")
+	)
+	(wire
+		(pts
+			(xy 118.11 39.37) (xy 123.19 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc7fabdd-6ded-476c-a6ac-8d93859e2502")
+	)
+	(wire
+		(pts
+			(xy 119.38 91.44) (xy 124.46 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf567eea-52a8-44f3-a936-3619a16a9c4b")
+	)
+	(wire
+		(pts
+			(xy 142.24 101.6) (xy 147.32 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c31ea48b-6b47-4e06-8c08-097d78bdf6bb")
+	)
+	(wire
+		(pts
+			(xy 54.61 71.12) (xy 54.61 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c44d1323-d11c-4571-9a65-ef52b4846ea7")
+	)
+	(wire
+		(pts
+			(xy 102.87 39.37) (xy 102.87 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce72447b-00eb-420f-a4d1-a18bdd8727b9")
+	)
+	(wire
+		(pts
+			(xy 33.02 72.39) (xy 33.02 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf8f1ac9-9fba-44ee-898e-36693e56344d")
+	)
+	(wire
+		(pts
+			(xy 76.2 39.37) (xy 76.2 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d070cbf1-b60b-42de-bbe4-09c92c103006")
+	)
+	(wire
+		(pts
+			(xy 33.02 29.21) (xy 38.1 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d628a283-30db-4d90-9b5c-09d569fe39e0")
+	)
+	(wire
+		(pts
+			(xy 97.79 100.33) (xy 97.79 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d75c4f85-5348-48c1-aae3-bed315a32cd1")
+	)
+	(wire
+		(pts
+			(xy 54.61 39.37) (xy 54.61 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c1fa09-ab8a-47a9-9497-c11ab69f665b")
+	)
+	(wire
+		(pts
+			(xy 123.19 29.21) (xy 123.19 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8448e42-7db8-4636-b1b9-d2e4f2351747")
+	)
+	(wire
+		(pts
+			(xy 59.69 72.39) (xy 59.69 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d86cfe7b-f7d9-4c8f-b931-35e92f06501a")
+	)
+	(wire
+		(pts
+			(xy 123.19 30.48) (xy 123.19 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc4eb7ed-02ba-4610-9b2c-db0e82bc4e56")
+	)
+	(wire
+		(pts
+			(xy 76.2 38.1) (xy 76.2 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcc112ce-21e8-423b-b311-b786c50214ca")
+	)
+	(wire
+		(pts
+			(xy 97.79 101.6) (xy 102.87 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddffd504-cc12-4fba-bc4a-97426a1527b7")
+	)
+	(wire
+		(pts
+			(xy 119.38 71.12) (xy 119.38 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6f51cf2-8c6a-467b-b5e5-dceb2098d536")
+	)
+	(wire
+		(pts
+			(xy 123.19 39.37) (xy 123.19 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e95a8549-e87b-4e28-86ea-91b54ba72d06")
+	)
+	(wire
+		(pts
+			(xy 102.87 72.39) (xy 102.87 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e998c3f9-4bcd-40ae-9fbc-a301f0a686fb")
+	)
+	(wire
+		(pts
+			(xy 102.87 29.21) (xy 102.87 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebf371ec-ba5e-4c01-a6c1-903ae048bb02")
+	)
+	(wire
+		(pts
+			(xy 38.1 30.48) (xy 38.1 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eccc4dea-45b0-4386-8ed0-826788173c48")
+	)
+	(wire
+		(pts
+			(xy 147.32 101.6) (xy 147.32 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee7030e9-4835-4a10-82ce-d1d96bd6db49")
+	)
+	(wire
+		(pts
+			(xy 97.79 92.71) (xy 97.79 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eed229d2-086a-4e07-abf9-7a00a7caef2d")
+	)
+	(wire
+		(pts
+			(xy 54.61 63.5) (xy 54.61 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4f3db4e-cbd9-4b4e-b278-04e423733166")
+	)
+	(wire
+		(pts
+			(xy 54.61 38.1) (xy 54.61 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f61e52b9-1f43-49fa-a377-38bd719b17c1")
+	)
+	(wire
+		(pts
+			(xy 76.2 30.48) (xy 76.2 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6532bf7-767c-4701-bc96-ad66a0bcc27d")
+	)
+	(wire
+		(pts
+			(xy 38.1 39.37) (xy 38.1 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f69c9f65-59bf-48e5-818f-b59657b82b4a")
+	)
+	(wire
+		(pts
+			(xy 33.02 63.5) (xy 33.02 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f885c4c4-d711-4ade-80b6-6b1e73a58387")
+	)
+	(wire
+		(pts
+			(xy 97.79 72.39) (xy 102.87 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa51c9fb-3369-4764-9c0c-dfd934275c86")
+	)
+	(wire
+		(pts
+			(xy 124.46 91.44) (xy 124.46 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdd9f72e-3464-41b6-953c-336222a1f80b")
+	)
+	(wire
+		(pts
+			(xy 102.87 30.48) (xy 102.87 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe6839a7-4bfc-47a3-8a8d-3e74da45e4d3")
+	)
+	(global_label "P3.3V"
+		(shape passive)
+		(at 102.87 90.17 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "002cf8f0-af03-4dd3-bd9f-b2a42a34be77")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P2.5V"
+		(shape passive)
+		(at 59.69 60.96 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d00eaae-e58f-4393-8256-44783d7b3811")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 59.69 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P1.1V"
+		(shape passive)
+		(at 59.69 27.94 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "14abe94e-e3fb-41b3-a2c8-3ff1d9a502af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 59.69 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P1.35V"
+		(shape passive)
+		(at 102.87 60.96 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16697194-063e-4b7d-8d52-ed5be703c368")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P3.3V"
+		(shape passive)
+		(at 147.32 90.17 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "32444f54-a985-4e9b-ac9b-8de299bcb68a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.32 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P2.5V"
+		(shape passive)
+		(at 38.1 60.96 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "38e24810-afb2-47f7-ae7a-719cbff95dae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P1.1V"
+		(shape passive)
+		(at 38.1 27.94 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "65fdba09-3a76-49e6-9c52-fe016b728407")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P3.3V"
+		(shape passive)
+		(at 124.46 90.17 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f8d67e5-580b-4e89-859b-6d8064e0bdd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.46 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P1.35V"
+		(shape passive)
+		(at 124.46 60.96 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8e0e7bba-3bd8-40e0-a75b-f77a535eb240")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.46 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P1.1V"
+		(shape passive)
+		(at 102.87 27.94 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1624c82-3dd3-4e0a-906e-44c5d3e12d2a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P1.1V"
+		(shape passive)
+		(at 123.19 27.94 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e89357df-594f-4832-b5dd-22ed6166fde0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P1.1V"
+		(shape passive)
+		(at 81.28 27.94 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f9285c93-6b64-42a1-9709-a0512ed0c67b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 33.02 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d35d269")
+		(property "Reference" "C48"
+			(at 30.099 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 30.099 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 33.9852 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 33.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 33.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 33.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 33.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "61ff759a-6702-480d-b5d9-31ff9016e002")
+		)
+		(pin "1"
+			(uuid "5eb20e7b-510b-4382-a232-b3540a345d5a")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 33.02 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d35d88e")
+		(property "Reference" "#PWR?"
+			(at 33.02 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.0962 43.8404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c9e8ad2b-7f54-4a8a-b11c-3f0a711e4496")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 38.1 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d35dbfc")
+		(property "Reference" "C50"
+			(at 41.021 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 41.021 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 39.0652 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 38.1 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 38.1 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 38.1 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 38.1 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a674d805-ea79-43cf-91ea-bdb9e3619a15")
+		)
+		(pin "2"
+			(uuid "487cf573-790f-4356-880f-94feedf5e7d7")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 54.61 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d35eccf")
+		(property "Reference" "C52"
+			(at 51.689 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 51.689 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 55.5752 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 54.61 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 54.61 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 54.61 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 54.61 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b33feb73-1ee5-41e1-8fdf-d895308451c0")
+		)
+		(pin "2"
+			(uuid "22107527-3a3d-4c2e-a052-ea1865a7f3dc")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 54.61 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d35ecd9")
+		(property "Reference" "#PWR?"
+			(at 54.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.6862 43.8404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "776e1f40-2e35-4ec5-a6a6-e664832b82c6")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 59.69 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d35ece3")
+		(property "Reference" "C54"
+			(at 62.611 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 62.611 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 60.6552 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 59.69 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 59.69 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 59.69 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 59.69 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba3dba11-4109-4296-b068-e290c875a68b")
+		)
+		(pin "2"
+			(uuid "1213d077-3498-475b-a707-1c8a9f1c1bea")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 76.2 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d360248")
+		(property "Reference" "C56"
+			(at 73.279 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 73.279 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 77.1652 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 76.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 76.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 76.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 76.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c722969f-40a7-4ea5-81dc-cf61bc9173f4")
+		)
+		(pin "2"
+			(uuid "18c138ef-60ba-4d66-934b-79d0df701692")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 76.2 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d360252")
+		(property "Reference" "#PWR?"
+			(at 76.2 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2762 43.8404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b906a28-552f-4ac5-879e-697c67f85f02")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 81.28 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36025c")
+		(property "Reference" "C57"
+			(at 84.201 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 84.201 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 82.2452 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 81.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 81.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 81.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 81.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13b1fb4a-c611-46e9-932b-28a238256f6a")
+		)
+		(pin "2"
+			(uuid "a90e12ca-8406-45b5-afd9-f5e36363fbe9")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 97.79 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d360271")
+		(property "Reference" "C58"
+			(at 94.869 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 94.869 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 98.7552 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b544d35-5678-4175-8ad1-aa0471181e37")
+		)
+		(pin "2"
+			(uuid "839d210c-58d6-48d1-a5a9-56f67574312a")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 97.79 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36027b")
+		(property "Reference" "#PWR?"
+			(at 97.79 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.8662 43.8404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3391728-1cab-4275-9849-543e02644b07")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 102.87 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d360285")
+		(property "Reference" "C59"
+			(at 105.791 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 105.791 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 103.8352 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 102.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 102.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 102.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 102.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2f7a57b-3923-4885-93ae-8cf1b2b1182b")
+		)
+		(pin "2"
+			(uuid "6bae471c-1f58-4105-9ead-8dadbe143f27")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d362a3c")
+		(property "Reference" "C60"
+			(at 115.189 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 115.189 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 119.0752 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1523f8bf-fb3f-40d1-8e94-dd226797cf0e")
+		)
+		(pin "2"
+			(uuid "fc88f849-5009-4d75-9fdd-ff3342c8c9ff")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 118.11 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d362a46")
+		(property "Reference" "#PWR?"
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.1862 43.8404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a95291f-fa3c-4920-8d82-86c43c94f791")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 123.19 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d362a50")
+		(property "Reference" "C61"
+			(at 126.111 33.1216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 126.111 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 124.1552 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 123.19 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 123.19 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 123.19 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 123.19 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb85068d-adb3-46f3-92b2-7e4e1d70e2c7")
+		)
+		(pin "2"
+			(uuid "644c36da-9415-4278-9a13-7209bfed391b")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 33.02 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d364700")
+		(property "Reference" "C49"
+			(at 30.099 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 30.099 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 33.9852 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 33.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 33.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 33.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 33.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a1863d8-3e0a-431f-bca9-ced08f1af321")
+		)
+		(pin "2"
+			(uuid "5ae0c2ab-50fe-47c1-b5e9-5dc17f16a988")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 33.02 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36470a")
+		(property "Reference" "#PWR?"
+			(at 33.02 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.0962 76.8604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98fc3563-17da-47ae-9ba9-88008fbc818a")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 38.1 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d364714")
+		(property "Reference" "C51"
+			(at 41.021 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 41.021 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 39.0652 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5366a177-04f9-472a-90a3-79f5e9807ae8")
+		)
+		(pin "2"
+			(uuid "6a29d601-da9b-425b-b628-94e01ccbe4c0")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 54.61 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d364729")
+		(property "Reference" "C53"
+			(at 51.689 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 51.689 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 55.5752 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 54.61 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 54.61 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 54.61 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 54.61 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "851026c7-17d6-4b8c-8db0-eda9b4370bb8")
+		)
+		(pin "2"
+			(uuid "7dcf2d88-1561-41e6-9418-915135b8dedd")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 54.61 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d364733")
+		(property "Reference" "#PWR?"
+			(at 54.61 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.6862 76.8604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc2de324-3b76-418d-98ce-0fbc9d6bbf15")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 59.69 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36473d")
+		(property "Reference" "C55"
+			(at 62.611 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 62.611 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 60.6552 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ee40c4f-65b2-407b-820f-8e6344c1f5fe")
+		)
+		(pin "2"
+			(uuid "5ad8d7fd-7f82-46fe-80a5-f842fdd82e80")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 97.79 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36be90")
+		(property "Reference" "C62"
+			(at 94.869 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 94.869 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 98.7552 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 97.79 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 97.79 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 97.79 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 97.79 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "758820d6-451f-4136-b576-b61ea33d3742")
+		)
+		(pin "2"
+			(uuid "fd7ee9c2-9433-42e3-97a5-e6f84369bf18")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 97.79 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36be9a")
+		(property "Reference" "#PWR?"
+			(at 97.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.8662 76.8604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31e0530b-c581-4afc-8021-9f6f38ca5f6a")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 102.87 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36bea4")
+		(property "Reference" "C64"
+			(at 105.791 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 105.791 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 103.8352 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10d034a5-9485-4804-864c-6562d0e37202")
+		)
+		(pin "2"
+			(uuid "4931e776-5ce5-4ee5-98ff-fe036d5bc08e")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36beb9")
+		(property "Reference" "C66"
+			(at 116.459 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 116.459 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 120.3452 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ad2d617-fad1-413f-8abd-c4523d3f06ec")
+		)
+		(pin "2"
+			(uuid "d595ff71-1d0c-4c6f-85a5-896725eca827")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 119.38 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36bec3")
+		(property "Reference" "#PWR?"
+			(at 119.38 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.4562 76.8604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7afd894-0110-413c-b02f-63179343f660")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d36becd")
+		(property "Reference" "C68"
+			(at 127.381 66.1416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 127.381 68.453 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 125.4252 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2182e913-156a-443d-bed0-b809eca91d66")
+		)
+		(pin "2"
+			(uuid "d7034591-40bc-4ea7-9db8-3e30e1dc5476")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 97.79 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d3707f5")
+		(property "Reference" "C63"
+			(at 94.869 95.3516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 94.869 97.663 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 98.7552 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 97.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 97.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 97.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 97.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef8098ac-0334-4fc2-8da9-f1ddd5d85adb")
+		)
+		(pin "2"
+			(uuid "88e16fc1-3159-4629-b36d-b94b598f339c")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 97.79 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d3707ff")
+		(property "Reference" "#PWR?"
+			(at 97.79 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.8662 106.0704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7849685d-472f-4eed-b3b6-b524aa726fbe")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 102.87 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d370809")
+		(property "Reference" "C65"
+			(at 105.791 95.3516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 105.791 97.663 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 103.8352 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d82633ca-ef7a-448e-8988-b72bc2f6b1c4")
+		)
+		(pin "2"
+			(uuid "b08c2336-ba53-4d4a-99fd-f0af56dba328")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d37081e")
+		(property "Reference" "C67"
+			(at 116.459 95.3516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 116.459 97.663 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 120.3452 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a1b7b83-9f95-4218-96e2-6a50a61ddc0a")
+		)
+		(pin "2"
+			(uuid "56233b30-ed6c-4bd5-8950-7f5e6d63b99c")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 119.38 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d370828")
+		(property "Reference" "#PWR?"
+			(at 119.38 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.4562 106.0704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4cb4696-1299-4ee0-8f37-80c81174402b")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d370832")
+		(property "Reference" "C69"
+			(at 127.381 95.3516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 127.381 97.663 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 125.4252 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f82bb4df-0d0f-4932-8fee-c417d6715ffe")
+		)
+		(pin "2"
+			(uuid "fa514d1b-6e7a-4ec3-bad6-b60ad8e9f83a")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 142.24 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d761cbe")
+		(property "Reference" "C74"
+			(at 139.319 95.3516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 139.319 97.663 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 143.2052 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03B103KP3NNNC"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB103"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d71a9b12-a980-4850-bd7e-d942966d5426")
+		)
+		(pin "2"
+			(uuid "fde51395-eed0-45a4-b643-ace85efc049a")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gkl_power:GND")
+		(at 142.24 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d761cc8")
+		(property "Reference" "#PWR?"
+			(at 142.24 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.3162 106.0704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56f77724-213b-4ccf-b570-8459526df0d8")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 147.32 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005d761cd2")
+		(property "Reference" "C75"
+			(at 150.241 95.3516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 150.241 97.663 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gkl_dipol:C_0201_0603Metric"
+			(at 148.2852 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mfg" "Samsung Electro-Mechanics"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CL03A104KQ3NNNC"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg_1" "YAGEO"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN_1" "CC0201KRX5R7BB104"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01297254-a180-40db-bc89-58820c1b7931")
+		)
+		(pin "2"
+			(uuid "b3ccb248-16bd-4198-b5dc-498ca1549905")
+		)
+		(instances
+			(project "OrangeCrab"
+				(path "/a8599e39-5ed9-4c4e-bc6d-5278922ba9b6/00000000-0000-0000-0000-00005d35d1f5"
+					(reference "C75")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
