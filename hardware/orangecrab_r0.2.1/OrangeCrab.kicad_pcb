@@ -10,7 +10,7 @@
 	(title_block
 		(title "Orange Crab")
 		(date "2020-07-18")
-		(rev "r0.2.1")
+		(rev "r0.2.1-gc1")
 		(company "Good Stuff Department")
 		(comment 1 "ECP5 in Feather format with DDR3 x16 memory")
 		(comment 3 "Licensed under CERN OHL v.1.2")
@@ -34392,7 +34392,7 @@
 			)
 		)
 	)
-	(gr_text "r0.2.1"
+	(gr_text "r0.2.1-gc1"
 		(at 172.57 101.04 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-00005d2e66d6")
