@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Orange Crab")
-		(date "2026-01-30")
-		(rev "r0.2.1-li1")
+		(date "2026-05-31")
+		(rev "r0.2.1-lsi2")
 		(company "Good Stuff Department")
 		(comment 1 "ECP5 in Feather format with DDR3 x16 memory")
 		(comment 3 "Licensed under CERN OHL v.1.2")
@@ -20281,6 +20281,104 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "logo:lsi-logo-no-text-1mm"
+		(layer "F.Cu")
+		(uuid "0cda8c9f-0a2a-4f7d-a623-40d53559711d")
+		(at 183.5 101)
+		(descr "Converted using: svg2mod -i lsi/code/media/logo-no-text-kicad-mask.svg --units mm -f 0.1345 -c -o lsi-logo-no-text-1mm")
+		(tags "svg2mod")
+		(property "Reference" "lsi-logo"
+			(at 0 -3.552072 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1b1eec98-2e9c-4129-89f0-525de9e495bb")
+			(effects
+				(font
+					(size 1.524 1.524)
+					(thickness 0.3048)
+				)
+			)
+		)
+		(property "Value" "G***"
+			(at 0 3.552072 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d81ef4dd-40e2-4c7d-986d-7f7cc3fd7a79")
+			(effects
+				(font
+					(size 1.524 1.524)
+					(thickness 0.3048)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83b22d7e-61d8-442e-8e50-3060caa14cb7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07b0d721-fced-4d52-a1aa-c1a7d89bc53e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_poly
+			(pts
+				(xy 0.067862 0.271429) (xy 0.067862 0.135718) (xy -0.06785 0.135718) (xy -0.06785 0.271429) (xy 0.067862 0.271429)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Cu")
+			(uuid "537350a0-12a3-4715-a77c-d1afd68324a2")
+		)
+		(fp_poly
+			(pts
+				(xy 0.474997 0.474997) (xy 0.474997 -0.474997) (xy -0.474997 -0.474997) (xy -0.474997 0.474997)
+				(xy 0.40714 0.474997) (xy 0.40714 0.40714) (xy -0.40714 0.40714) (xy -0.40714 0) (xy 0.067857 0)
+				(xy 0.067857 -0.135713) (xy -0.067857 -0.135713) (xy -0.067857 -0.271427) (xy 0.067857 -0.271427)
+				(xy 0.067857 -0.135713) (xy 0.067857 0) (xy 0.40714 0) (xy 0.40714 0.40714) (xy 0.40714 0.474997)
+				(xy 0.474997 0.474997)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Cu")
+			(uuid "d9d1a99f-c5ac-4b82-98ca-57edc70e2845")
+		)
+		(fp_poly
+			(pts
+				(xy -0.504072 -0.504072) (xy -0.504072 0.504072) (xy 0.504072 0.504072) (xy 0.504072 -0.504072)
+				(xy -0.504072 -0.504072)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Mask")
+			(uuid "475759d7-15be-46b6-8dd3-85005eb5b99f")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005d1e4975")
@@ -34420,7 +34518,7 @@
 			)
 		)
 	)
-	(gr_text "r0.2.1-li1"
+	(gr_text "r0.2.1-lsi2"
 		(at 183 99 90)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-00005d2e66d6")
